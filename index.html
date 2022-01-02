@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Search Box -->
+    <section id="searchBox" class="hidden">
+        <div class="fixed left-0 top-0 h-screen w-screen flex justify-center items-center bg-white z-20">
+            <button
+                class="search_box_close absolute right-3 top-3 rounded-md font-light p-10 bg-primary text-3xl text-white"><i
+                    class="fa fa-close"></i></button>
+            <form action="#" method="GET" class="w-2/5">
+                <div class="relative">
+                    <button type="submit"
+                        class="absolute left-0 top-0 text-secondary py-2 px-1 hover:text-primary text-3xl"><i
+                            class="fa fa-search"></i></button>
+                    <input
+                        class="w-full bg-transparent border-b text-3xl pl-12 py-2 border-gray-300 focus:border-primary focus:outline-none"
+                        type="text" name="serach" id="search" placeholder="Type Here Then Enter">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="eng_header_top_area bg-secondary py-3 lg:block hidden">
+        <div class="mx-16">
+            <div class="flex justify-between items-center">
+                <div class="w-1/2">
+                    <ul class="flex justify-start">
+                        <li class="topbar_list_item"><i class="fa fa-phone"></i>Phone:<a href="tel:+5565454117">+55 654
+                                541 17</a></li>
+                        <li class="topbar_list_item"><i class="fa fa-envelope"></i>Email:<a
+                                href="mailto:Info@Energia.Com">Info@Energia.Com</a></li>
+                        <li class="topbar_list_item"><i class="fa fa-clock-o"></i>Hours:<a
+                                href="mailto:Info@Energia.Com"> Mon-Fri: 8am – 7pm</a></li>
+                    </ul>
+                </div>
+                <div class="w-1/2 flex justify-end items-center">
+                    <ul class="flex justify-start">
+                        <li class='social_media_item'><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class='social_media_item'><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class='social_media_item'><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li class='social_media_item'><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                    <ul class="flex justify-start mx-5">
+                        <li class="top_links_item"><a href="#">News & Media</a></li>
+                        <li class="top_links_item"><a href="#">Careers</a></li>
+                        <li class="top_links_item"><a href="#">FAQs</a></li>
+                    </ul>
+                    <ul class="flex">
+                        <li class="lang_parent"><a href="#"><img src="./assets/img/en.png" alt="English"><span>English
+                                    <i class="fa fa-angle-down"></i></span></a>
+                            <ul class="lang_dropdown">
+                                <li><a href="#"><img src="./assets/img/en.png" alt="English"><span>English</span></a>
+                                </li>
+                                <li><a href="#"><img src="./assets/img/ar.png" alt="Arabic"><span>Arabic</span></a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header class="eng_header_area">
+        <div class="md:ml-16 flex justify-between relative">
+
+            <div class="min-w-max flex items-center">
+                <div class="md:w-40 w-20 ml-3">
+                    <a href="#"><img src="./assets/img/logo-dark.png" alt="Energia"></a>
+                </div>
+                <ul id="mainmenu"
+                    class="md:flex md:ml-10 md:pl-10 hidden md:visible md:border-l md:border-t-0 border-t w-full left-0 top-full md:top-0 absolute md:relative md:shadow-none shadow-md md:pb-0 pb-2 z-10 bg-white">
+                    <li class="menu_item">
+                        <a href="#">Home</a>
+
+                        <ul>
+                            <li><a href="#">Dropdown Item</a></li>
+                            <li><a href="#">Dropdown Item</a></li>
+                            <li><a href="#">Dropdown Item</a></li>
+                            <li><a href="#">Dropdown Item</a></li>
+                            <li><a href="#">Dropdown Item</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="menu_item"><a href="#">Company</a></li>
+                    <li class="menu_item"><a href="#">Service</a></li>
+                    <li class="menu_item"><a href="#">Projects</a></li>
+                    <li class="menu_item"><a href="#">Blog</a>
+                        <ul>
+                            <li><a href="#">Dropdown Item</a></li>
+                            <li><a href="#">Dropdown Item</a></li>
+                            <li><a href="#">Dropdown Item</a></li>
+                            <li><a href="#">Dropdown Item</a></li>
+                            <li><a href="#">Dropdown Item</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_item"><a href="#">Contact</a></li>
+                    <div class="block sm:hidden">
+                        <a class="p-3 mx-3 my-5 text-center rounded-lg text-base capitalize text-white block bg-primary"
+                            href="#">Request a quote <i class="fa fa-arrow-right ml-2"></i></a>
+                    </div>
+                </ul>
+
+            </div>
+            <div class="min-w-max flex">
+                <div class="search_btn flex self-center">
+                    <i class="fa fa-search"></i>
+                </div>
+                <div class="menu_cart flex border-l border-r">
+                    <i class="fa fa-shopping-cart"></i>
+                </div>
+                <ul class="flex sm:hidden self-center ml-4">
+                    <li class="lang_parent"><a href="#"><img src="./assets/img/en.png" alt="English"><span>English <i
+                                    class="fa fa-angle-down"></i></span></a>
+                        <ul class="lang_dropdown">
+                            <li><a href="#"><img src="./assets/img/en.png" alt="English"><span>English</span></a></li>
+                            <li><a href="#"><img src="./assets/img/ar.png" alt="Arabic"><span>Arabic</span></a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <div class="mobile_menu sm:hidden block self-center mx-3">
+                    <i class="fa fa-bars w-6 h-6 text-center"></i>
+                </div>
+                <div
+                    class="bg-primary hidden md:block relative  transition hover:bg-secondary ease-in-out delay-150 after:content-[''] after:w-0 after:h-full after:bg-secondary after:absolute after:left-0 after:top-0 after:-z-10 hover:after:w-full ">
+                    <a class="py-10 px-7 text-white block" href="#">Request a quote <i
+                            class="fa fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="eng_about_area md:py-24 py-10 mx-4">
+        <div class="container mx-auto">
+            <div class="md:flex block justify-between">
+                <div class="md:w-4/12 w-[80%] mx-auto md:mx-10 relative">
+                    <div class="p-10 bg-primary font-bold text-white rounded-lg absolute top-10 -left-10">
+                        <i class="text-5xl fa fa-lightbulb-o"></i>
+                        <h2 class="text-4xl my-5">0</h2>
+                        <h3 class="text-sm">Happy Clients</h3>
+                    </div>
+                    <div class="md:h-full h-[50vh] mb-6 bg-cover bg-center rounded-lg"
+                        style="background-image: url('https://picsum.photos/1024/800');"></div>
+                </div>
+                <div class="md:w-7/12 w-full pb-10">
+                    <h4 class="p-3 mb-4 bg-primary text-primary inline-block bg-opacity-20 font-bold text-sm rounded-md">
+                        Complete Commercial And Residential Solar Systems</h4>
+                    <h2 class="text-secondary md:text-5xl text-3xl font-bold leading-normal mb-8">We Are Pioneers In The World Of Solar
+                        & Renewable Energy!</h2>
+                    <div class="mb-6 text-base text-bodycolor">
+                        <p class="font-bold text-secondary">We drive the transition to more sustainable, reliable &
+                            affordable energy systems. With our
+                            innovative technologies, we energize society, that’s our aim!</p>
+                        <p class="mt-6">The increase in extreme weather events and rising sea levels are unmistakable signs
+                            of climate
+                            change. Roughly 850 million people still live without access to electricity, which is the
+                            foundation of sustainable development.</p>
+                        <p class="mt-6">The increase in extreme weather events and rising sea levels are unmistakable signs
+                            of climate
+                            change. Roughly 850 million people still live without access to electricity, which is the
+                            foundation of sustainable development.</p>
+                        <p class="mt-6">The increase in extreme weather events and rising sea levels are unmistakable signs
+                            of climate
+                            change. Roughly 850 million people still live without access to electricity, which is the
+                            foundation of sustainable development.</p>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <a href="#" class="px-5 py-5 rounded-lg inline-block text-white bg-secondary">Read More <i
+                            class="ml-4 fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

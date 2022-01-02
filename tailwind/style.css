@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+a {
+  @apply duration-200 transition-all;
+}
+body {
+  @apply font-roboto;
+}
+
+/* Header Top Area */
+.topbar_list_item {
+  @apply text-[#929ba2] mr-5 text-sm;
+}
+.topbar_list_item i {
+  @apply text-primary mr-2;
+}
+.topbar_list_item a {
+  @apply ml-2 hover:text-primary;
+}
+
+.social_media_item {
+  @apply w-5 h-5 leading-5 text-center bg-primary rounded-full mx-1 text-xs border border-primary hover:bg-secondary duration-200 transition-all hover:text-white text-secondary;
+}
+
+.top_links_item a {
+  @apply text-white text-xs mx-1 hover:text-primary;
+}
+.lang_parent {
+  @apply relative;
+}
+.lang_parent a {
+  @apply flex md:text-white text-secondary text-xs items-center;
+}
+.lang_parent a img {
+  @apply mr-2;
+}
+
+.lang_dropdown {
+  @apply invisible top-[120%] right-0 bg-white p-4 absolute rounded-bl-md rounded-br-md duration-500 transition-all opacity-0 z-10 w-28;
+}
+.lang_dropdown li {
+  @apply mb-2  text-xs;
+}
+.lang_dropdown a {
+  @apply text-secondary hover:text-primary;
+}
+.lang_parent:hover .lang_dropdown {
+  @apply visible opacity-100;
+}
+
+/* Header */
+.menu_item a {
+  @apply md:py-10 pt-4 block md:inline-block px-4 border-b-2 font-bold text-secondary hover:text-primary border-white hover:border-primary relative top-[2px] cursor-pointer;
+}
+.menu_item {
+  @apply relative;
+}
+.menu_item ul {
+  @apply bg-secondary md:w-52 md:absolute md:top-[120%] left-0 md:opacity-0 md:invisible hidden md:block  ease-in-out duration-500 transition-all w-[95%] ml-auto visible opacity-100 relative text-sm;
+}
+.menu_item ul li a {
+  @apply block px-2 py-3 font-normal text-white  border-b border-bodycolor hover:border-primary;
+}
+.menu_item:hover > ul {
+  @apply md:visible md:opacity-100 top-full;
+}
+.menu_item:hover a, .menu_item a.active_menu{
+    @apply text-primary border-primary
+}
+.menu_item:hover ul li a{
+    @apply text-white border-bodycolor hover:text-primary hover:border-primary
+}
+
+.menu_item > span{
+    @apply md:relative md:right-1 md:bg-transparent md:top-0 md:text-secondary absolute top-3 right-3 bg-primary w-5 h-5 text-center text-white font-bold rounded-md leading-5 -z-10
+}
+
+.menu_item:hover > span{
+    @apply text-primary bg-secondary md:bg-transparent
+}
+
+
+.search_btn i,
+.menu_cart i {
+  @apply md:px-10 px-4 md:text-xl text-sm cursor-pointer hover:text-primary duration-500 transition-all text-secondary;
+}
+.menu_cart {
+  @apply border-r border-l;
+}
+.menu_cart i {
+  @apply md:py-10 py-5;
+}
+
+
