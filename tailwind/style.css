@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 a {
-  @apply duration-200 transition-all;
+  @apply transition-all ease-linear duration-100
 }
 body {
   @apply font-roboto;
@@ -51,19 +51,19 @@ body {
 
 /* Header */
 .menu_item a {
-  @apply md:py-10 pt-4 block md:inline-block px-4 border-b-2 font-bold text-secondary hover:text-primary border-white hover:border-primary relative top-[2px] cursor-pointer;
+  @apply xl:py-10 pt-4 block xl:inline-block px-4 border-b-2 font-bold text-secondary hover:text-primary border-white hover:border-primary relative top-[2px] cursor-pointer;
 }
 .menu_item {
   @apply relative;
 }
 .menu_item ul {
-  @apply bg-secondary md:w-52 md:absolute md:top-[120%] left-0 md:opacity-0 md:invisible hidden md:block  ease-in-out duration-500 transition-all w-[95%] ml-auto visible opacity-100 relative text-sm;
+  @apply bg-secondary xl:w-52 xl:absolute xl:top-[120%] left-0 xl:opacity-0 xl:invisible hidden xl:block  ease-in-out duration-500 transition-all w-[95%] ml-auto visible opacity-100 relative text-sm;
 }
 .menu_item ul li a {
   @apply block px-2 py-3 font-normal text-white  border-b border-bodycolor hover:border-primary;
 }
 .menu_item:hover > ul {
-  @apply md:visible md:opacity-100 top-full;
+  @apply xl:visible xl:opacity-100 top-full;
 }
 .menu_item:hover a, .menu_item a.active_menu{
     @apply text-primary border-primary
@@ -73,11 +73,11 @@ body {
 }
 
 .menu_item > span{
-    @apply md:relative md:right-1 md:bg-transparent md:top-0 md:text-secondary absolute top-3 right-3 bg-primary w-5 h-5 text-center text-white font-bold rounded-md leading-5 -z-10
+    @apply xl:relative xl:right-1 xl:bg-transparent xl:top-0 xl:text-secondary absolute top-3 right-3 bg-primary w-5 h-5 text-center text-white font-bold rounded-md leading-5 -z-10
 }
 
 .menu_item:hover > span{
-    @apply text-primary bg-secondary md:bg-transparent
+    @apply text-primary bg-secondary xl:bg-transparent
 }
 
 
@@ -93,3 +93,48 @@ body {
 }
 
 
+/*  */
+.eng_btn{
+  @apply px-5 py-5 rounded-md inline-block border border-current relative z-10 after:content-[''] after:transition-all hover:after:w-full after:w-0 after:h-full after:absolute after:-z-10 after:top-0 after:left-0 after:rounded-md after:duration-300 after:ease-in-out;
+}
+.eng_btn i{
+  @apply ml-4
+}
+.btn_primary{
+  @apply text-white after:bg-white bg-primary border-primary hover:border-white hover:text-secondary;
+}
+.btn_secondary{
+  @apply text-white bg-secondary after:bg-primary;
+}
+.btn_border{
+  @apply border-white text-white after:bg-transparent hover:after:bg-white ml-2 hover:text-secondary
+}
+
+.single_card{
+  @apply bg-white text-secondary p-10 rounded-lg text-center flex flex-col justify-between
+}
+.single_card > i{
+  @apply text-5xl text-primary
+}
+.single_card h2{
+  @apply font-bold text-xl mb-5
+}
+.single_card p{
+  @apply text-bodycolor
+}
+.single_card a{
+  @apply mt-6 rounded-full overflow-hidden bg-secondary h-8 inline-flex self-center
+}
+.single_card a i{
+  @apply text-white leading-[30px] text-center px-3
+}
+.single_card a span{
+  @apply  text-white text-[0px] opacity-0 transition-all ease-linear self-center
+}
+.single_card:hover a{
+  @apply rounded-lg bg-primary px-2 w-auto pr-5
+}
+
+.single_card:hover a span{
+  @apply text-sm opacity-100
+}

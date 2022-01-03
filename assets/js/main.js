@@ -1,13 +1,14 @@
 (function(){
     'use strict';
 
-
     jQuery(document).ready(function($){
         searchBox();
         searchBoxClose();
         menuIndicator();
         mobileMenuOptions();
         mobileMenuTrigger();
+
+        
     });
 
     // Menu Item Dropdown Indicator

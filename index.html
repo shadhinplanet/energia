@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/lity/dist/lity.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -82,7 +83,7 @@
                     <a href="#"><img src="./assets/img/logo-dark.png" alt="Energia"></a>
                 </div>
                 <ul id="mainmenu"
-                    class="md:flex md:ml-10 md:pl-10 hidden md:visible md:border-l md:border-t-0 border-t w-full left-0 top-full md:top-0 absolute md:relative md:shadow-none shadow-md md:pb-0 pb-2 z-10 bg-white">
+                    class="xl:flex xl:ml-10 xl:pl-10 hidden xl:visible xl:border-l xl:border-t-0 border-t w-full left-0 top-full xl:top-0 absolute xl:relative xl:shadow-none shadow-md xl:pb-0 pb-2 z-10 bg-white">
                     <li class="menu_item">
                         <a href="#">Home</a>
 
@@ -132,11 +133,11 @@
                     </li>
 
                 </ul>
-                <div class="mobile_menu sm:hidden block self-center mx-3">
+                <div class="mobile_menu xl:hidden block self-center mx-3">
                     <i class="fa fa-bars w-6 h-6 text-center"></i>
                 </div>
                 <div
-                    class="bg-primary hidden md:block relative  transition hover:bg-secondary ease-in-out delay-150 after:content-[''] after:w-0 after:h-full after:bg-secondary after:absolute after:left-0 after:top-0 after:-z-10 hover:after:w-full ">
+                    class="bg-primary hidden md:block relative z-[1] after:content-[''] after:absolute after:w-0 after:h-full after:left-0 after:top-0 after:bg-secondary after:-z-10 after:transition-all after:duration-300 after:ease-linear hover:after:w-full">
                     <a class="py-10 px-7 text-white block" href="#">Request a quote <i
                             class="fa fa-arrow-right ml-2"></i></a>
                 </div>
@@ -179,17 +180,69 @@
                             foundation of sustainable development.</p>
                     </div>
                     <div class="text-center md:text-left">
-                        <a href="#" class="px-5 py-5 rounded-lg inline-block text-white bg-secondary">Read More <i
-                            class="ml-4 fa fa-arrow-right"></i></a>
+                        <a href="#" class="eng_btn btn_secondary">Read More <i
+                            class="fa fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="eng_features_area bg-secondary md:py-24 py-10">
+        <div class="container mx-auto">
+            <div class="flex justify-between">
+                <div class="w-4/12 text-white mr-auto">
+                    <h2 class="font-bold text-primary mb-3">Sustainable, Reliable & Affordable Energy!</h2>
+                    <h1 class="text-4xl leading-normal font-bold">Providing Value To Our ClientsThrough Ongoing Product & Innovation.</h1>
+                </div>
+                <div class="w-1/2 text-white">
+                    <p class="mb-6">While improving the yield and performance of solar energy products, our PV industry experience enables us to provide in-depth material sourcing, financing and supply chain expertise for every step.</p>
+                    <p class="mb-6">Raw polycrystalline silicon for PV manufacturing. Offered in various grades and formats including chunks, chips, powder and ingot.</p>
+                    <a href="#" class="eng_btn btn_primary">Get Started <i class="fa fa-arrow-right"></i></a>
+                    <a href="#" class="eng_btn btn_border">Explore Our Plans <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="grid gap-5 grid-cols-4 mt-20">
+                <div class="single_card">
+                    <i class="fa fa-home"></i>
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas deserunt repellendus obcaecati vero numquam cumque asperiores commodi excepturi</p>
+                    <a href="#"><i class="fa fa-arrow-right"></i><span>Explore</span></a>
+                </div> <div class="single_card">
+                    <i class="fa fa-home"></i>
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas deserunt repellendus obcaecati vero numquam cumque asperiores commodi excepturi</p>
+                    <a href="#"><i class="fa fa-arrow-right"></i><span>Explore</span></a>
+                </div> <div class="single_card">
+                    <i class="fa fa-home"></i>
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas deserunt repellendus obcaecati vero numquam cumque asperiores commodi excepturi</p>
+                    <a href="#"><i class="fa fa-arrow-right"></i><span>Explore</span></a>
+                </div> <div class="single_card">
+                    <i class="fa fa-home"></i>
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas deserunt repellendus obcaecati vero numquam cumque asperiores commodi excepturi</p>
+                    <a href="#"><i class="fa fa-arrow-right"></i><span>Explore</span></a>
+                </div>
+            </div>
+            <div class="flex mt-10">
+                <div class="w-3/12 text-white ">
+                    <p>If you have any questions or need help, feel free to contact with our team, or you can call us any time <span class="text-primary">(002) 01061245741</span></p>
+                    <a href="#" class="eng_btn btn_border mt-8">Explore Our Plans <i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="w-8/12 relative ml-auto ">
+                    <div class="rounded-lg absolute w-full h-96" style="background-image: url(https://picsum.photos/1024/500);">
+                        <button type="button" class="absolute bottom-0 left-0 text-white text-6xl p-10 flex items-center"><i class="fa fa-youtube-play"></i><span class="text-base leading-none ml-2 w-28 text-left"><a href="//www.youtube.com/watch?v=XSGBVzeBUbk" data-lity>Watch our Video</a></span></button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <script src="./assets/js/jquery.min.js"></script>
+    <script src="./node_modules/lity/dist/lity.min.js"></script>
     <script src="./assets/js/main.js"></script>
 
 </body>

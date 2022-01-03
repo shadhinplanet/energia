@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.0.8"
+  },
+  "dependencies": {
+    "lity": "^2.4.1"
   }
 }
